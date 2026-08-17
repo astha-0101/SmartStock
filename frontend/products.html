@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SmartStock - Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="logo-box">S</div>
+      <div class="logo-text"><b>SmartStock</b><span>INVENTORY SYSTEM</span></div>
+    </div>
+    <div class="menu-label">MENU</div>
+    <nav class="menu">
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="products.html" class="active">📦 Products</a>
+      <a href="inventory.html">🗃️ Inventory</a>
+      <a href="orders.html">🛒 Orders <span class="badge">3</span></a>
+      <a href="#">🚚 Suppliers</a>
+      <a href="#">📈 Analytics</a>
+      <a href="forecast.html">🔮 Forecast</a>
+      <a href="#">👤 Profile</a>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <header class="navbar">
+      <h2>Products</h2>
+      <div class="search-bar">🔍 <input type="text" placeholder="Search products, orders..."></div>
+      <div class="nav-right">
+        <div class="icon-btn">🔔</div>
+        <div class="profile"><div class="avatar">AS</div><span>Astha Singh</span></div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="page-head">
+        <div><h1>Products</h1><p>12 products found</p></div>
+        <a href="product-form.html" class="btn btn-primary">+ Add Product</a>
+      </div>
+
+      <div class="filters">
+        <div class="filter-search">🔍 <input type="text" placeholder="Search by name or SKU..."></div>
+        <div class="chip-group">
+          <span class="chip active">All</span>
+          <span class="chip">Electronics</span>
+          <span class="chip">Stationery</span>
+          <span class="chip">Furniture</span>
+        </div>
+      </div>
+
+      <div class="card" style="padding:0;">
+        <table>
+          <tr>
+            <th>Product Name</th><th>SKU</th><th>Category</th><th>Price</th>
+            <th>Stock</th><th>Supplier</th><th>Status</th><th>Actions</th>
+          </tr>
+          <tr>
+            <td>Wireless Mouse</td><td>EL-1032</td><td>Electronics</td><td>₹850</td>
+            <td>8</td><td>TechZone Ltd</td><td><span class="badge low-stock">Low Stock</span></td>
+            <td><a href="product-form.html" class="btn btn-sm">Edit</a> <button class="btn btn-sm btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Mechanical Keyboard</td><td>EL-1087</td><td>Electronics</td><td>₹2,400</td>
+            <td>3</td><td>TechZone Ltd</td><td><span class="badge low-stock">Low Stock</span></td>
+            <td><a href="product-form.html" class="btn btn-sm">Edit</a> <button class="btn btn-sm btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>USB-C Hub 7-in-1</td><td>EL-2091</td><td>Electronics</td><td>₹1,800</td>
+            <td>42</td><td>TechZone Ltd</td><td><span class="badge in-stock">In Stock</span></td>
+            <td><a href="product-form.html" class="btn btn-sm">Edit</a> <button class="btn btn-sm btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>HDMI Cable 2m</td><td>EL-2050</td><td>Electronics</td><td>₹450</td>
+            <td>68</td><td>CableWorld</td><td><span class="badge in-stock">In Stock</span></td>
+            <td><a href="product-form.html" class="btn btn-sm">Edit</a> <button class="btn btn-sm btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Ergonomic Chair</td><td>FR-0501</td><td>Furniture</td><td>₹12,500</td>
+            <td>0</td><td>WorkSpace Pro</td><td><span class="badge out-stock">Out of Stock</span></td>
+            <td><a href="product-form.html" class="btn btn-sm">Edit</a> <button class="btn btn-sm btn-danger">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Standing Desk</td><td>FR-0510</td><td>Furniture</td><td>₹22,000</td>
+            <td>7</td><td>WorkSpace Pro</td><td><span class="badge in-stock">In Stock</span></td>
+            <td><a href="product-form.html" class="btn btn-sm">Edit</a> <button class="btn btn-sm btn-danger">Delete</button></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </div>
+</div>
+</body>
+</html>
