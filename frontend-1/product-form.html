@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SmartStock - Add Product</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-box">🖥</span>
+      <span>SmartStock</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="product-form.html" class="active">Add Product</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+
+    <div class="page-title">
+      <h1>Add Product</h1>
+      <p>Enter product details to add a new item to inventory.</p>
+    </div>
+
+    <form class="form-box" action="#" method="post">
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label for="name">Product Name</label>
+          <input type="text" id="name" placeholder="e.g. Wireless Mouse">
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="">Select category</option>
+            <option value="electronics">Electronics</option>
+            <option value="stationery">Stationery</option>
+            <option value="furniture">Furniture</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price (₹)</label>
+          <input type="number" id="price" placeholder="e.g. 500">
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" placeholder="e.g. 20">
+        </div>
+
+        <div class="form-group">
+          <label for="reorder">Reorder Level</label>
+          <input type="number" id="reorder" placeholder="e.g. 10">
+        </div>
+
+        <div class="form-group">
+          <label for="supplier">Supplier</label>
+          <input type="text" id="supplier" placeholder="e.g. Tech Distributors Pvt. Ltd">
+        </div>
+
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="button button-primary">Add Product</button>
+        <a href="dashboard.html" class="button button-secondary">Cancel</a>
+      </div>
+    </form>
+
+  </main>
+
+  <footer>
+    SmartStock – Inventory Management System
+  </footer>
+
+</body>
+</html>

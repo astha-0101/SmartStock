@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SmartStock - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-box">🖥</span>
+      <span>SmartStock</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="product-form.html">Add Product</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+
+    <div class="page-title">
+      <h1>Inventory Dashboard</h1>
+      <p>Manage products and monitor stock levels.</p>
+    </div>
+
+    <!-- Summary cards -->
+    <section class="cards">
+      <div class="card">
+        <h3>Total Products</h3>
+        <p class="number">25</p>
+      </div>
+      <div class="card">
+        <h3>Low Stock</h3>
+        <p class="number red">4</p>
+      </div>
+      <div class="card">
+        <h3>Total Stock Units</h3>
+        <p class="number">35</p>
+      </div>
+    </section>
+
+    <!-- Product table -->
+    <section class="table-section">
+      <div class="table-header">
+        <h2>Inventory Overview</h2>
+        <a href="product-form.html" class="button button-primary">+ Add Product</a>
+      </div>
+
+      <table>
+        <tr>
+          <th>Product Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Reorder Level</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Wireless Mouse</td>
+          <td>Electronics</td>
+          <td>₹500</td>
+          <td>18</td>
+          <td>10</td>
+          <td><span class="status available">Available</span></td>
+        </tr>
+        <tr>
+          <td>Keyboard</td>
+          <td>Electronics</td>
+          <td>₹800</td>
+          <td>5</td>
+          <td>10</td>
+          <td><span class="status low">Low Stock</span></td>
+        </tr>
+        <tr>
+          <td>Monitor</td>
+          <td>Electronics</td>
+          <td>₹8,000</td>
+          <td>12</td>
+          <td>5</td>
+          <td><span class="status available">Available</span></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Stock information -->
+    <section class="stock-info">
+      <h2>Stock Information</h2>
+      <ul>
+        <li>Wireless Mouse — Current Stock: 18 units — Reorder Level: 10</li>
+        <li>Keyboard — Current Stock: 5 units — Reorder Level: 10</li>
+        <li>Monitor — Current Stock: 12 units — Reorder Level: 5</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    SmartStock – Inventory Management System
+  </footer>
+
+</body>
+</html>
